@@ -19,8 +19,6 @@ GEM
       chunky_png (~> 1.2)
       fssm (>= 0.2.7)
       sass (~> 3.1)
-    compass-normalize (1.4.3)
-      compass (>= 0.12.0)
     em-websocket (0.5.0)
       eventmachine (>= 0.12.9)
       http_parser.rb (~> 0.5.3)
@@ -112,6 +110,5 @@ PLATFORMS
 
 DEPENDENCIES
   capistrano
-  compass-normalize
   middleman (~> 3.1.0)
   middleman-livereload (~> 3.1.0)

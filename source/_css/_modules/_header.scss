@@ -1,0 +1,26 @@
+header.header{
+  font-family: $title-font, Helvetica, Arial, sans-serif;
+  font-style: normal;
+  height: 45px;
+  @include background-image(linear-gradient($header-gradient-start, $header-gradient-stop));
+    
+  .logo {
+    float: left;
+    height: 100%;
+    font-size: 20px;
+  }
+  
+  ul.nav {
+    float: left;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+  li.nav-item {
+    float: left;
+    padding: 0 10px;
+    &:first-child { padding-left: 0; }
+    &:last-child { padding-right: 0; }
+  }
+}
