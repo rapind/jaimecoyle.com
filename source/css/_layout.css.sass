@@ -1,20 +1,26 @@
 
+body
+  font-size: 16px
+
+.container
+  min-width: 320px
+
+.header
+  h1
+    font-size: 32px
+  .subheader
+    font-size: 18px
+
 .header
   background-image: url("/images/header.jpg")
   background-size: cover
   background-position: top center
-  padding-top: 170px
+  padding-top: 140px
   padding-bottom: 220px
   color: #fff
-  letter-spacing: 2px
-  h1
-    font-size: 5.2em
-    text-align: center
-    text-decoration-style: uppercase
-  .subheading
-    font-size: 21px
-    text-align: center
-    color: #fff
+  
+.about
+  margin-top: 50px
 
 footer
   display: block
@@ -25,11 +31,29 @@ footer
   address
     text-align: right
 
-@media (max-height: 568px)
+
+// ****
+// Responsive font sizes
+@media (min-width: 481px)
   .header
-    padding-top: 112px
     h1
-      font-size: 2.2em
-  .subheading
-    font-size: 16px
+      font-size: 50px
+    .subheader
+      font-size: 22px
+
+@media (min-width: 768px)
+  .header
+    h1
+      font-size: 70px
+    .subheader
+      font-size: 24px
+  body
+    font-size: 18px
+
+@media (min-width: 1200px)
+  .header
+    h1
+      font-size: 90px
+    .subheader
+      font-size: 26px
   

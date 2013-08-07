@@ -7,19 +7,24 @@
     %meta{ content: "Dave Rapin", name: "author" }
     %meta{ content: "Meta description goes here.", name: "description" }
     %title= current_page.data.title || "Default Title"
-    %link{ href: "http://fonts.googleapis.com/css?family=Lato:400,900|Playfair+Display:400,700,400italic", rel: "stylesheet", type: "text/css" }
+    %link{ href: "http://fonts.googleapis.com/css?family=Lato:400,900|Vollkorn:400,400italic", rel: "stylesheet", type: "text/css" }
     = stylesheet_link_tag "all"
   
   %body{ class: page_classes }
     .navbar.navbar-fixed-top
-      %button.navbar-toggle{ type: "button", :"data-toggle" => "collapse", :"data-target" => ".navbar-responsive-collapse" }
-        - 3.times do
-          %span.icon-bar
-      %a.navbar-brand{ href: "/" } Jaime Coyle
-      .nav-collapse.collapse.navbar-responsive-collapse
-        %ul.nav.navbar-nav
-          %li
-            %a{ href: "/" } Home
+      .container
+        %button.navbar-toggle{ type: "button", :"data-toggle" => "collapse", :"data-target" => ".navbar-responsive-collapse" }
+          - 3.times do
+            %span.icon-bar
+        %a.navbar-brand{ href: "/" } Jaime Coyle
+        .nav-collapse.collapse.navbar-responsive-collapse
+          %ul.nav.navbar-nav
+            %li
+              %a{ href: "/" } Maternity
+            %li
+              %a{ href: "/" } Newborn
+            %li
+              %a{ href: "/" } Family
 
     = yield
     = javascript_include_tag "all"
