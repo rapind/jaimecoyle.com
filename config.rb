@@ -45,22 +45,25 @@ activate :livereload
 #   end
 # end
 
-set :css_dir, '_css'
-set :fonts_dir, '_fonts'
-set :images_dir, '_images'
-set :js_dir, '_js'
+set :css_dir, 'css'
+set :images_dir, 'images'
+set :js_dir, 'js'
+
+activate :directory_indexes
 
 set :debug_assets, true
 
 # Build-specific configuration
 configure :build do
-  # For example, change the Compass output style for deployment
+   # For example, change the Compass output style for deployment
   activate :minify_css
 
   # Minify Javascript on build
   activate :minify_javascript
+  
+  set :debug_assets, false
 
-  # Enable cache buster
+  # Cache busting using filenames.
   activate :asset_hash
 
   # Use relative URLs
