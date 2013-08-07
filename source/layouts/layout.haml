@@ -27,4 +27,18 @@
               %a{ href: "/" } Family
 
     = yield
+
+    %footer
+      .container
+        .row
+          .col-6
+            %p
+              &copy; 2013, Jaime Coyle Photography
+          %address.col-6
+            Kitchener, ON
+            %br
+            226 241 4247
+            %br
+            = mail_to "jaime@jaimecoyle.com"
+            
     = javascript_include_tag "all"
