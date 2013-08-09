@@ -2,24 +2,29 @@
 
 // Fonts
 $primary-font: 'Lato', 'Helvetica', 'Arial', sans-serif
-$secondary-font: 'Vollkorn', serif
+$secondary-font: Georgia, 'Times New Roman', serif
 
 body
-  font-family: $secondary-font
   color: #444
   background-color: #faf7f5
 
-h1, h2, h3, h4, h5, h6
+p
+  font-family: $secondary-font
+  
+h1
   font-family: $primary-font
   font-weight: 700
+
+h2, h3, h4, h5, h6
+  font-family: $secondary-font
   color: #333
 
 .navbar
   font-family: $primary-font
   //background-color: rgba(255, 255, 255, 0.8)
 
-.btn
-  font-family: $primary-font
+// .btn
+//   font-family: $primary-font
 
 h1, .subheader
   color: #fff
@@ -27,7 +32,6 @@ h1, .subheader
   letter-spacing: 2px
 
 .subheader
-  font-family: $secondary-font
   font-style: italic
 
 .shaded

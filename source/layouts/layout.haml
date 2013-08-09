@@ -7,7 +7,7 @@
     %meta{ content: "Dave Rapin", name: "author" }
     %meta{ content: "Meta description goes here.", name: "description" }
     %title= current_page.data.title || "Default Title"
-    %link{ href: "http://fonts.googleapis.com/css?family=Lato:400,900|Vollkorn:400,400italic", rel: "stylesheet", type: "text/css" }
+    %link{ href: "http://fonts.googleapis.com/css?family=Lato:900", rel: "stylesheet", type: "text/css" }
     = stylesheet_link_tag "all"
   
   %body{ class: page_classes }
@@ -19,10 +19,11 @@
             %p
               &copy; 2013, Jaime Coyle Photography
           %address.col-6
-            Kitchener, ON
-            %br
-            519 900 6047
-            %br
-            = mail_to "jaime@jaimecoyle.com"
+            %p
+              Kitchener, ON
+              %br
+              519 900 6047
+              %br
+              = mail_to "jaime@jaimecoyle.com"
 
     = javascript_include_tag "all"
