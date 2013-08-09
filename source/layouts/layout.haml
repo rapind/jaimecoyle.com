@@ -11,23 +11,7 @@
     = stylesheet_link_tag "all"
   
   %body{ class: page_classes }
-    .navbar.navbar-fixed-top
-      .container
-        %button.navbar-toggle{ type: "button", :"data-toggle" => "collapse", :"data-target" => ".navbar-responsive-collapse" }
-          - 3.times do
-            %span.icon-bar
-        %a.navbar-brand{ href: "/" } Jaime Coyle
-        .nav-collapse.collapse.navbar-responsive-collapse
-          %ul.nav.navbar-nav
-            %li
-              %a{ href: "/" } Maternity
-            %li
-              %a{ href: "/" } Newborn
-            %li
-              %a{ href: "/" } Family
-
     = yield
-
     %footer
       .container
         .row
@@ -40,5 +24,5 @@
             226 241 4247
             %br
             = mail_to "jaime@jaimecoyle.com"
-            
+
     = javascript_include_tag "all"
