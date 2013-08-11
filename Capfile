@@ -10,7 +10,7 @@ set :copy_compression, :gzip
 set :use_sudo, false
 set :user, 'deploy'
 
-role :web, 'git.rapin.com'
+role :web, 'jaimecoyle.com'
 
 # this tells capistrano what to do when you deploy
 namespace :deploy do
