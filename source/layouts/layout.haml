@@ -1,11 +1,12 @@
 !!! 5
 %html
   %head
+    %meta{ name: "google-site-verification", content: "tHRkzIrwZJ6Ae3F2Hp-u4QxJRAr5AP35HCVyK76b6EA" }
     %meta{ charset: "utf-8" }
     %meta{ content: "IE=edge,chrome=1", "http-equiv" => "X-UA-Compatible" }
-    %meta{ :name => "viewport", :content => "width=device-width, initial-scale=1.0" }
-    %meta{ content: "Dave Rapin", name: "author" }
-    %meta{ content: "Meta description goes here.", name: "description" }
+    %meta{ name: "viewport", content: "width=device-width, initial-scale=1.0" }
+    %meta{ name: "author", content: "Dave Rapin" }
+    %meta{ name: "description", content: "Meta description goes here." }
     %title= current_page.data.title || "Default Title"
     %link{ href: "http://fonts.googleapis.com/css?family=Lato:900", rel: "stylesheet", type: "text/css" }
     = stylesheet_link_tag "all"
@@ -43,3 +44,15 @@
                 while(x=eval(x));
 
     = javascript_include_tag "all"
+    :javascript
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-2450369-14']);
+      _gaq.push(['_setDomainName', 'jaimecoyle.com']);
+      _gaq.push(['_setAllowLinker', true]);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
