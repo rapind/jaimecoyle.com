@@ -3,7 +3,6 @@ load 'deploy'
 set :application, "jaimecoyle.com"
 set :deploy_to, "/var/www/#{application}"
 set :deploy_via, :copy
-ssh_options[:port] = 30000
 set :repository, "build"
 set :scm, :none
 set :copy_compression, :gzip
